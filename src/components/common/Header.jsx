@@ -30,17 +30,14 @@ const Header = () => {
                         </a>
                         <div className="md:flex hidden items-center space-x-[18px]">
                             {SOCIAL_ICONS.map((icon, index) => (
-                                <a
-                                    key={index}
+                                <a key={index}
                                     href={icon.link}
                                     target="_blank"
-                                    rel="noopener noreferrer"
-                                >
+                                    rel="noopener noreferrer">
                                     <img
                                         src={icon.img}
                                         alt={icon.title}
-                                        className="w-6 h-6 cursor-pointer hover:scale-125 transition-all duration-300"
-                                    />
+                                        className="w-6 h-6 cursor-pointer hover:scale-105 transition-all duration-300" />
                                 </a>
                             ))}
                             <button className="bg-yellow-400 text-black px-[6px] py-2 font-semibold border border-black hover:bg-white transition-all duration-500">
@@ -49,8 +46,7 @@ const Header = () => {
                         </div>
                         <button
                             className="md:hidden text-3xl z-[52] font-bold focus:outline-none transition-all duration-300"
-                            onClick={() => setMenuOpen(!menuOpen)}
-                        >
+                            onClick={() => setMenuOpen(!menuOpen)}>
                             {menuOpen ? "✕" : "☰"}
                         </button>
                     </div>

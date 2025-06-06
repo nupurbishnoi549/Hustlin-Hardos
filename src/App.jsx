@@ -6,7 +6,7 @@ import LatestTweets from './components/LatestTweets'
 import Minting from './components/Minting'
 import Roadmap from './components/RoadMap'
 import Team from './components/Team'
-import Faqs from './components/Faqs'
+// import Faqs from './components/Faqs'
 import Footer from './components/Footer'
 
 const App = () => {
@@ -19,7 +19,7 @@ const App = () => {
       <Minting />
       <Roadmap />
       <Team />
-      <Faqs />
+      {/* <Faqs /> */}
       <Footer/>
     </>
   )
