@@ -1,8 +1,10 @@
 import { useState, useEffect } from "react";
-import { COUNT_LIST } from "../utils/helper"; 
+import { COUNT_LIST } from "../utils/helper";
 import { useInView } from 'react-intersection-observer';
 import CountUp from 'react-countup';
 import newsBoy from '../assets/images/png/news-boy-image.png';
+import Discription from "./common/Discription";
+import CommonHeading from "./common/CommanHeading";
 
 const Minting = () => {
     const [count, setCount] = useState(100);
@@ -46,16 +48,18 @@ const Minting = () => {
     return (
         <div id="minting" className="border-b-2">
             <div className="container max-w-[1172px] mx-auto px-4">
-                <h2 className="lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal lg:py-[89px] md:py-10 py-7">Minting</h2>
+                {/* <h2 className="lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal lg:py-[89px] md:py-10 py-7">Minting</h2> */}
+                <CommonHeading myText="Minting"/>
             </div>
             <div className="border-b-2 border-black w-full"></div>
             <div className="container max-w-[1172px] mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 border-x-2 border-black">
                     <div className="pt-11 pb-[47px] pl-[25px] border-r border-black">
-                        <p className="text-base text-black font-normal leading-[150%] mb-[15px] lg:max-w-[438px] pr-2">
+                        {/* <p className="text-base text-black font-normal leading-[150%] mb-[15px] lg:max-w-[438px] pr-2">
                             Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
-                        </p>
-
+                        </p> */}
+                        <Discription titleText="Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
+                        "myClass="leading-[150%] mb-[15px] lg:max-w-[438px] pr-2" />
                         <div className="flex items-center border-2 border-black max-w-[238px] lg:mb-[35px] mb-3">
                             <button
                                 className="px-6 text-4xl py-1 text-center cursor-pointer"

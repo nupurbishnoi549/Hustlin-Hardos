@@ -1,5 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FAQS } from '../utils/helper';
+import CommonHeading from './common/CommanHeading';
 
 const Faqs = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -20,7 +21,8 @@ const Faqs = () => {
     return (
         <div className="text-black border-b-2">
             <div className="container max-w-[1170px] mx-auto px-4">
-                <h2 className="lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal py-10">Faqs</h2>
+                {/* <h2 className="lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal py-10">Faqs</h2> */}
+                <CommonHeading myText="Faqs" />
             </div>
             <div className="border border-black w-full"></div>
             <div className="container max-w-[1170px] mx-auto px-4">

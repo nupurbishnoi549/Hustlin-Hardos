@@ -1,3 +1,5 @@
+import React from 'react'
+
 const CommonHeading = ({ myText, myClass }) => {
     return (
         <h2

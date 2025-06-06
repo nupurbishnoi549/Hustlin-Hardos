@@ -2,12 +2,14 @@ import React from 'react';
 import { ROADMAP_Data } from '../utils/helper';
 import downArrow from '../assets/svg/down-arrow.svg';
 import roadmapIcon from '../assets/svg/roadmap-icon.svg';
+import CommonHeading from './common/CommanHeading';
 
 const Roadmap = () => {
     return (
         <div id="roadmap">
             <div className="container max-w-[1172px] mx-auto px-4">
-                <h2 className='lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal lg:py-[89px] md:py-10 py-7'>RoadMap</h2>
+                {/* <h2 className='lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal lg:py-[89px] md:py-10 py-7'>RoadMap</h2> */}
+                <CommonHeading myText="RoadMap" />
             </div>
             <div className="border-b-2 border-black w-full"></div>
 
