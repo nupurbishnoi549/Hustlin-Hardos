@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'tailwindcss';
+
+@font-face {
+  font-family: "moderno";
+  src: url("../src/assets/fonts/modernofbcomp-bold.otf");
+}
+
+html,
+body {
+  scroll-behavior: smooth !important;
+  font-family: 'Noto Serif', serif;
+  background-image: url(../src/assets/images/png/bg-img.png);
+}
+.ff-moderno {
+  font-family: "moderno";
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 35s linear infinite;
+}
