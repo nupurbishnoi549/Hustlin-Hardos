@@ -1,5 +1,5 @@
 import React from 'react';
-import { ROADMAP_Data } from '../utils/helper';
+import { ROADMAP_DATA } from '../utils/helper';
 import downArrow from '../assets/svg/down-arrow.svg';
 import roadmapIcon from '../assets/svg/roadmap-icon.svg';
 import CommonHeading from './common/CommanHeading';
@@ -20,7 +20,7 @@ const Roadmap = () => {
                         className="w-4 h-full lg:mt-[150px] mt-10 xl:mr-3" />
                 </div>
 
-                {ROADMAP_Data.map((item, index) => (
+                {ROADMAP_DATA.map((item, index) => (
                     <div
                         key={index}
                         className={`flex w-full items-start ${index % 2 === 0 ? 'lg:justify-end' : 'justify-start'}`}>

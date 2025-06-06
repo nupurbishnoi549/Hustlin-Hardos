@@ -1,5 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
-import { FAQS } from '../utils/helper';
+import { FAQS_LIST } from '../utils/helper';
 import CommonHeading from './common/CommanHeading';
 
 const Faqs = () => {
@@ -26,7 +26,7 @@ const Faqs = () => {
             <div className="border border-black w-full"></div>
             <div className="container max-w-[1170px] mx-auto px-4">
                 <div className="border-x-2 border-black divide-y">
-                    {FAQS.map((faq, index) => (
+                    {FAQS_LIST.map((faq, index) => (
                         <div key={index} className="md:pt-8 md:pb-[43px] md:pl-[30px] md:pr-11 p-3">
                             <button
                                 onClick={() => toggleFAQ(index)}

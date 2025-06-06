@@ -70,7 +70,7 @@ export const COUNT_LIST = [
     { title: "Tincidunt." }
 ];
 
-export const ROADMAP_Data = [
+export const ROADMAP_DATA = [
     {
         title: 'Community Building',
         description: 'The concept of Hustlin’ Hardos was born a few short weeks ago and we’re currently focused on the most important aspect of the project - COMMUNITY. We are organizing giveaways and events to spread the word around what will be one of the most exciting NFT projects so far. We also aim to reward those driving early engagement for the project in the form of white-list and pre-sale access to the official Hustlin’ Hardo drop. Join us on our Discord channel to see what we are all about!',
@@ -136,7 +136,7 @@ export const TEAM_DATA = [
 
 ];
 
-export const FAQS = [
+export const FAQS_LIST = [
     {
         question: "What is an NFT?",
         answer:

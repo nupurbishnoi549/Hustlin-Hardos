@@ -73,7 +73,6 @@ const Minting = () => {
                                 +
                             </button>
                         </div>
-
                         <button className="bg-[#FFD600] px-[14px] py-[9px] text-black text-sm font-semibold border-2 hover:bg-white transition-all duration-500 ease-linear cursor-pointer border-black">
                             MINT NOW
                         </button>

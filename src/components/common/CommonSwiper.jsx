@@ -50,8 +50,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
                         <SwiperSlide key={index}>
                             <div
                                 className={`border-black p-[26px] ${index % 2 === 0 ? 'border-l-1 border-r-1' : 'border-l-1 border-r-1'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'flex flex-col items-center justify-center h-[326px]'
-                                    }`}
-                            >
+                                    }`}>
                                 {!isTweets && (
                                     <img
                                         src={hustlinPic}
