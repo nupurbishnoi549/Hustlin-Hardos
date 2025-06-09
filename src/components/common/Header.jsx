@@ -26,7 +26,7 @@ const Header = () => {
                 <div className="container mx-auto max-w-[1172px] px-4">
                     <div className="flex items-center justify-between max-w-[658px] ml-auto py-3">
                         <a href="#" className="z-[52] text-2xl font-normal ff-moderno">
-                            Hustlin' Hardos
+                       Hustlin' Hardos
                         </a>
                         <div className="md:flex hidden items-center space-x-[18px]">
                             {SOCIAL_ICONS.map((icon, index) => (

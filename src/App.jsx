@@ -8,6 +8,7 @@ import Roadmap from './components/RoadMap'
 import Team from './components/Team'
 import Faqs from './components/Faqs'
 import Footer from './components/Footer'
+import BackToTop from './components/BackToTop'
 
 const App = () => {
   return (
@@ -20,7 +21,8 @@ const App = () => {
       <Roadmap />
       <Team />
       <Faqs />
-      <Footer/>
+      <Footer />
+      <BackToTop/>
     </>
   )
 }
