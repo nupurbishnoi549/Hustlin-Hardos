@@ -6,7 +6,7 @@ const BreakingNews = () => {
     return (
         <>
             <div className="container max-w-[1140px] mx-auto px-4">
-                <h2 className="xl:text-[72px] lg:text-[64px] md:text-[48px] text-3xl max-w-[1140px] font-normal leading-[135%] xl:pt-[67px] xl:pb-[64px] lg:py-12 md:py-10 py-7">
+                <h2 className="xl:text-[72px] text-effect lg:text-[64px] md:text-[48px] text-3xl max-w-[1140px] font-normal leading-[135%] xl:pt-[67px] xl:pb-[64px] lg:py-12 md:py-10 py-7">
                     “BREAKING NEWS: Hustlin Hardos set to launch the most anticipated NFT project of 2022"
                 </h2>
             </div>

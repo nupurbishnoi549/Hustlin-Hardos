@@ -13,6 +13,7 @@ body {
   font-family: 'Noto Serif', serif;
   background-image: url(../src/assets/images/png/bg-img.png);
 }
+
 .ff-moderno {
   font-family: "moderno";
 
@@ -30,4 +31,21 @@ body {
 
 .animate-scroll {
   animation: scroll 35s linear infinite;
+}
+
+.text-shadow {
+  text-shadow:
+    -1px -1px 1px #0000004D,
+    1px 1px 1px #FFFFFF;
+}
+.text-shadow-effect {
+  text-shadow:
+    2px 2px 4px #00000040,
+    0px 4px 4px #00000040,
+    2px 2px 1px #FFFFFF52;
+}
+.text-effect {
+  text-shadow:
+    2px 2px 4px #00000040,
+    2px 2px 1px #FFFFFF52;
 }

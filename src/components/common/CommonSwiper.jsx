@@ -13,7 +13,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
     return (
         <>
             <div className="container max-w-[1172px] mx-auto px-4 relative">
-                <h2 className={`lg:text-[80px] md:text-6xl text-4xl leading-[104%] font-normal lg:py-[89px] md:py-10 py-7 text-black ${isTweets ? 'uppercase' : ''}`}>
+                <h2 className={`lg:text-[80px] md:text-6xl text-4xl leading-[104%] text-effect font-normal lg:py-[89px] md:py-10 py-7 text-black ${isTweets ? 'uppercase' : ''}`}>
                     {title}
                 </h2>
 
@@ -62,7 +62,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
                                     <h3
                                         className={`md:text-4xl text-3xl ${isTweets
                                             ? 'text-left text-black font-semibold pb-2'
-                                            : 'text-center text-[#70675F] font-[900] pb-4'
+                                            : 'text-center text-[#70675F] font-[900] pb-4 text-shadow'
                                             }`}
                                     >
                                         {item.title}
