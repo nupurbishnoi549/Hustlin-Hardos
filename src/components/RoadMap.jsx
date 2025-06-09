@@ -38,7 +38,7 @@ const Roadmap = () => {
                             <img
                                 src={roadmapIcon}
                                 alt="roadmap-icon"
-                                className="md:w-8 md:h-7 w-5 h-5" />
+                                className="md:w-8 md:h-7 size-5" />
                         </div>
                     </div>
                 ))}
