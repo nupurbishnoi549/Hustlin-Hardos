@@ -56,18 +56,18 @@ const Minting = () => {
                     <div className="pt-11 pb-[47px] pl-[25px] border-r border-black">
                         <Description titleText="Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
                         "myClass="leading-[150%] mb-[15px] lg:max-w-[438px] pr-2" />
-                        <div className="flex items-center border-2 border-black max-w-[238px] lg:mb-[35px] mb-3">
+                        <div className="flex items-center border-2 border-black h-[53px] w-[238px] lg:mb-[35px] mb-3">
                             <button
-                                className="px-6 text-4xl py-1 text-center cursor-pointer"
+                                className="px-6 h-full text-4xl cursor-pointer flex items-center justify-center"
                                 onClick={() => setCount(count > 1 ? count - 1 : 1)}
                             >
                                 -
                             </button>
-                            <span className="border-l-2 border-r-2 border-black py-1 text-center w-[112px] font-semibold leading-[100%] text-4xl px-6">
+                            <span className="flex-1 h-full border-l-2 border-r-2 border-black flex items-center justify-center font-semibold text-4xl">
                                 {count}
                             </span>
                             <button
-                                className="px-6 text-4xl text-center py-1 cursor-pointer"
+                                className="px-6 h-full text-4xl cursor-pointer flex items-center justify-center"
                                 onClick={() => setCount(count + 1)}
                             >
                                 +
@@ -97,18 +97,18 @@ const Minting = () => {
 
             <div className="border-b-2 border-black w-full"></div>
 
-            <div className="container max-w-[832px] mx-auto px-4">
-                <div ref={ref} className="grid md:grid-cols-4 grid-cols-2 border-t border-black py-4">
-                    {COUNT_LIST.map((item, index) => (
-                        <div key={index} className="p-2">
-                            <p className="text-2xl font-normal">{item.title}</p>
-                            <h3 className="text-4xl text-left font-bold pt-2">
-                                {inView ? <CountUp start={0} end={42} duration={3} /> : 0}
-                            </h3>
-                        </div>
-                    ))}
-                </div>
+        <div className="container max-w-[832px] mx-auto px-4">
+    <div ref={ref} className="grid md:grid-cols-4 grid-cols-2  py-4">
+        {COUNT_LIST.map((item, index) => (
+            <div key={index} className="p-2">
+                <p className="text-2xl font-normal">{item.title}</p>
+                <h3 className="text-4xl text-left font-bold pt-2 font-mono">
+                    {inView ? <CountUp start={0} end={42} duration={3} /> : 0}
+                </h3>
             </div>
+        ))}
+    </div>
+</div>
         </div>
     );
 };
