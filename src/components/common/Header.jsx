@@ -25,8 +25,8 @@ const Header = () => {
             <div className="border-b border-black z-50 relative">
                 <div className="container mx-auto max-w-[1172px] px-4">
                     <div className="flex items-center justify-between max-w-[658px] ml-auto py-3">
-                        <a href="#" className="z-[52]">
-                            <h1 className="text-2xl font-normal ff-moderno">Hustlin' Hardos</h1>
+                        <a href="#" className="z-[52] text-2xl font-normal ff-moderno">
+                            Hustlin' Hardos
                         </a>
                         <div className="md:flex hidden items-center space-x-[18px]">
                             {SOCIAL_ICONS.map((icon, index) => (
@@ -40,7 +40,7 @@ const Header = () => {
                                         className="w-6 h-6 cursor-pointer hover:scale-105 transition-all duration-300" />
                                 </a>
                             ))}
-                            <button className="bg-yellow-400 text-black px-[6px] py-2 font-semibold border border-black hover:bg-white transition-all duration-500">
+                            <button className="bg-yellow-400 cursor-pointer text-black px-[6px] py-2 font-semibold border border-black hover:bg-white transition-all duration-500">
                                 CONNECT WALLET
                             </button>
                         </div>
@@ -94,7 +94,7 @@ const Header = () => {
                         ))}
                     </div>
 
-                    <button className="bg-yellow-400 text-black px-6 py-2 font-semibold border border-black hover:bg-yellow-500 transition-all duration-500 mt-4">
+                    <button className="bg-yellow-400 cursor-pointer text-black px-6 py-2 font-semibold border border-black hover:bg-yellow-500 transition-all duration-500 mt-4">
                         CONNECT WALLET
                     </button>
                 </div>

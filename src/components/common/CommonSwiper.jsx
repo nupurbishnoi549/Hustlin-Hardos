@@ -4,10 +4,10 @@ import { Navigation, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import leftArrow from '../../assets/svg/left-arrow.svg';
-import rightArrow from '../../assets/svg/right-arrow.svg';
+import leftArrow from '../../assets/images/svg/left-arrow.svg';
+import rightArrow from '../../assets/images/svg/right-arrow.svg';
 import hustlinPic from '../../assets/images/png/hustlin-short-pic.png';
-import twitterIcon from '../../assets/svg/twitter-two.svg';
+import twitterIcon from '../../assets/images/svg/twitter-two.svg';
 
 const CommonSlider = ({ data, title, isTweets }) => {
     return (
@@ -49,7 +49,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
                     {data.map((item, index) => (
                         <SwiperSlide key={index}>
                             <div
-                                className={`border-black p-[26px] ${index % 2 === 0 ? 'border-l-1 border-r-1' : 'border-l-1 border-r-1'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'flex flex-col items-center justify-center h-[326px]'
+                                className={`border-black p-[26px] ${index % 2 === 0 ? 'border-l-1 border-r-1' : 'border-l-1 border-r-1'} ${isTweets ? 'flex flex-col items-start justify-center h-[259px]' : 'bg-[#EFE7E1] flex flex-col items-center justify-center h-[326px]'
                                     }`}>
                                 {!isTweets && (
                                     <img
@@ -82,7 +82,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
                                 </p>
 
                                 {isTweets && (
-                                    <a href="#" className="underline font-normal text-sm pt-3">
+                                    <a href="#" className="hover:underline font-normal text-sm pt-3">
                                         Read More ...
                                     </a>
                                 )}

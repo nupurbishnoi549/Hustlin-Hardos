@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { FAQS_LIST } from '../utils/helper';
-import CommonHeading from './common/CommanHeading';
+import Heading from './common/Heading';
 
 const Faqs = () => {
     const [openIndex, setOpenIndex] = useState(null);
@@ -21,13 +21,13 @@ const Faqs = () => {
     return (
         <div className="text-black border-b-2">
             <div className="container max-w-[1170px] mx-auto px-4">
-                <CommonHeading myText="Faqs" />
+                <Heading myText="Faqs" />
             </div>
             <div className="border border-black w-full"></div>
             <div className="container max-w-[1170px] mx-auto px-4">
                 <div className="border-x-2 border-black divide-y">
                     {FAQS_LIST.map((faq, index) => (
-                        <div key={index} className="md:pt-8 md:pb-[43px] md:pl-[30px] md:pr-11 p-3">
+                        <div key={index} className="md:py-8 md:pl-[30px] md:pr-11 p-3">
                             <button
                                 onClick={() => toggleFAQ(index)}
                                 className="w-full text-left md:text-2xl cursor-pointer text-lg font-semibold flex justify-between items-center"

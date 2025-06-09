@@ -1,8 +1,8 @@
-import discord from '../assets/svg/discord.svg'
-import twitter from '../assets/svg/twitter.svg'
-import instagram from '../assets/svg/insta.svg'
-import media from '../assets/svg/media.svg'
-import boat from '../assets/svg/boat.svg'
+import discord from '../assets/images/svg/discord.svg'
+import twitter from '../assets/images/svg/twitter.svg'
+import instagram from '../assets/images/svg/insta.svg'
+import media from '../assets/images/svg/media.svg'
+import boat from '../assets/images/svg/boat.svg'
 
 export const STOCK_VALUES = [
     { title: "S&P", value: "-1.01%", color: "text-red-500" },
@@ -24,7 +24,7 @@ export const SOCIAL_ICONS = [
     { title: "discord", img: discord, link: "https://discord.com" },
     { title: "twitter", img: twitter, link: "https://twitter.com" },
     { title: "instagram", img: instagram, link: "https://instagram.com" },
-    { title: "media", img: media, link: "https://www.media.net/" },
+    { title: "media", img: media, link: "https://medium.com/" },
     { title: "boat", img: boat, link: "https://opensea.io/" }
 ];
 
@@ -78,7 +78,7 @@ export const ROADMAP_DATA = [
     },
 
     {
-        title: 'minting event',
+        title: 'Minting Event',
         description: 'Hustlin’ Hardos can be minted and are revealed to the world. There will only ever be 9,999 Hustlin’ Hardos, so this is your chance to get your hands on this unique collectible item, which will become an integral part of your online identity',
         phase: 'Phase 2',
     },
@@ -90,7 +90,7 @@ export const ROADMAP_DATA = [
     },
 
     {
-        title: 'no-loss gambling',
+        title: 'No-Loss Gambling',
         description: 'Each week, we will organize free to enter no-loss gambling, with 25% of royalties being distributed as prize pool in events such as marble races or blackjack/poker tournaments. Imagine being able to bet on your Hustlin’ Hardo in a virtual foot race against your friend’s hardos. Since those events are free to enter, you can’t lose anything - but you can win BIG!',
         phase: 'Phase 4',
     },
@@ -100,17 +100,17 @@ export const ROADMAP_DATA = [
         phase: 'Phase 5',
     },
     {
-        title: 'metaverse integrations',
+        title: 'Metaverse Integrations',
         description: 'Both our personal and professional lives are increasingly moving online. Your Huslin’ Hardo will become your gateway to this new reality, acting as your 3D avatar in the metaverse',
         phase: 'Phase 6',
     },
     {
-        title: 'future developments',
+        title: 'Future Developments',
         description: 'It wouldn’t make sense to build one of the best online communities and not actively listen to its suggestions. As such, we also plan to execute against some community-generated ideas, delivering against the priorities of those who made Hustlin’ Hardos a success',
         phase: 'Phase 7',
     },
     {
-        title: 'swapping individual attributes',
+        title: 'Swapping Individual Attributes',
         description: 'Building a wardrobe app where you can secondary sales',
         phase: 'Phase 8',
     },
