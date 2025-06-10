@@ -20,11 +20,11 @@ const Faqs = () => {
 
     return (
         <div className="text-black border-b-2">
-            <div className="container max-w-[1170px] mx-auto px-4">
+            <div className="container max-w-[1140px] mx-auto max-xl:px-4">
                 <Heading myText="Faqs" />
             </div>
             <div className="border border-black w-full"></div>
-            <div className="container max-w-[1170px] mx-auto px-4">
+            <div className="container max-w-[1140px] mx-auto max-xl:px-4">
                 <div className="border-x-2 border-black divide-y">
                     {FAQS_LIST.map((faq, index) => (
                         <div key={index} className="md:py-8 md:pl-[30px] md:pr-11 p-3">
@@ -33,7 +33,7 @@ const Faqs = () => {
                                 className="w-full text-left md:text-2xl cursor-pointer text-lg font-semibold flex justify-between items-center"
                             >
                                 {faq.question}
-                                <span className="text-2xl font-normal">
+                                <span className="text-2xl">
                                     {openIndex === index ? '-' : '+'}
                                 </span>
                             </button>
@@ -42,7 +42,7 @@ const Faqs = () => {
                                 className="overflow-hidden transition-all duration-500 ease-in-out"
                                 style={{ maxHeight: '0px' }}
                             >
-                                <p className="md:mt-4 mt-2 text-black font-normal max-w-[992px] md:text-base text-sm">
+                                <p className="md:mt-4 mt-2 text-black max-w-[992px] md:text-base text-sm">
                                     {faq.answer}
                                 </p>
                             </div>

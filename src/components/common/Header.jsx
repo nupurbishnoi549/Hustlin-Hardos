@@ -14,7 +14,7 @@ const Header = () => {
                 <div className="whitespace-nowrap animate-scroll flex gap-x-6">
                     {STOCK_VALUES.map((item, index) => (
                         <div key={index} className="flex items-center md:mr-[62px] mr-6">
-                            <span className="font-normal mr-2 text-base text-white">{item.title}</span>
+                            <span className="font-normal mr-2 text-white">{item.title}</span>
                             <span className={`ml-1 px-1 py-[2px] border rounded-[5px] ${item.color}`}>
                                 {item.value}
                             </span>
@@ -23,9 +23,9 @@ const Header = () => {
                 </div>
             </div>
             <div className="border-b border-black z-50 relative">
-                <div className="container mx-auto max-w-[1172px] px-4">
+                <div className="container mx-auto max-w-[1140px] px-4">
                     <div className="flex items-center justify-between max-w-[658px] ml-auto py-3">
-                        <a href="#" className="z-[52] text-2xl font-normal ff-moderno">
+                        <a href="#" className="z-[52] text-2xl ff-moderno">
                        Hustlin' Hardos
                         </a>
                         <div className="md:flex hidden items-center space-x-[18px]">

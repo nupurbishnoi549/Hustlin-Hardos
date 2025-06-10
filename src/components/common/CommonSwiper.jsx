@@ -12,11 +12,10 @@ import twitterIcon from '../../assets/images/svg/twitter-two.svg';
 const CommonSlider = ({ data, title, isTweets }) => {
     return (
         <>
-            <div className="container max-w-[1172px] mx-auto px-4 relative">
-                <h2 className={`lg:text-[80px] md:text-6xl text-4xl leading-[104%] text-effect font-normal lg:py-[89px] md:py-10 py-7 text-black ${isTweets ? 'uppercase' : ''}`}>
+            <div className="container max-w-[1140px] mx-auto max-xl:px-4 relative">
+                <h2 className={`lg:text-[80px] md:text-6xl text-4xl leading-[104%] text-effect lg:py-[89px] md:py-10 py-7 text-black ${isTweets ? 'uppercase' : ''}`}>
                     {title}
                 </h2>
-
                 <button className="custom-prev absolute top-[45%] cursor-pointer max-sm:top-[35%] xl:right-[5%] sm:right-[10%] right-[12%] z-10 w-[18px] h-9">
                     <img src={leftArrow} alt="left-arrow" width={18} height={36} />
                 </button>
@@ -27,7 +26,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
 
             <div className="border border-black w-full"></div>
 
-            <div className="container max-w-[1100px] mx-auto max-xl:px-4 border-l-2">
+            <div className="container max-w-[1140px] mx-auto max-xl:px-4 border-l-2">
                 <div className={`w-full ${!isTweets ? 'bg-[url("../src/assets/images/png/bg-team-img.png")] bg-no-repeat bg-cover bg-center' : ''}`}>
                     <Swiper
                         modules={[Navigation, Autoplay]}
@@ -71,7 +70,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
                                     {isTweets && (
                                         <div className="flex gap-[11px] pb-3">
                                             <img src={twitterIcon} alt="twitter" width={22} height={18} />
-                                            <p className="text-sm font-normal">{item.date}</p>
+                                            <p className="text-sm">{item.date}</p>
                                         </div>
                                     )}
 
@@ -80,7 +79,7 @@ const CommonSlider = ({ data, title, isTweets }) => {
                                     </p>
 
                                     {isTweets && (
-                                        <a href="#" className="hover:underline font-normal text-sm pt-3">
+                                        <a href="#" className="hover:underline text-sm pt-3">
                                             Read More ...
                                         </a>
                                     )}

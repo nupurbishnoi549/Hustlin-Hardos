@@ -47,11 +47,11 @@ const Minting = () => {
 
     return (
         <div id="minting" className="border-b-2">
-            <div className="container max-w-[1172px] mx-auto px-4">
+            <div className="container max-w-[1140px] mx-auto max-xl:px-4">
                 <Heading myText="Minting"/>
             </div>
             <div className="border-b-2 border-black w-full"></div>
-            <div className="container max-w-[1172px] mx-auto px-4">
+            <div className="container max-w-[1140px] mx-auto max-xl:px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 border-x-2 border-black">
                     <div className="pt-11 pb-[47px] pl-[25px] border-r border-black">
                         <Description titleText="Most of the Hustlin’ Hardos first experienced NFTs via other successful projects like NBA TopShot, where revealing your newly minted item invoked the same emotions as opening up that first pack of baseball cards. NFTs have allowed us to enjoy those feelings once again while also empowering communities through shared ownership. The space has seen incredible growth over the past year, and it is our belief that we are in the very early innings of the paradigm shift that will be powered by web3.
@@ -101,7 +101,7 @@ const Minting = () => {
     <div ref={ref} className="grid md:grid-cols-4 grid-cols-2  py-4">
         {COUNT_LIST.map((item, index) => (
             <div key={index} className="p-2">
-                <p className="text-2xl font-normal">{item.title}</p>
+                <p className="text-2xl">{item.title}</p>
                 <h3 className="text-4xl text-left font-bold pt-2 font-mono">
                     {inView ? <CountUp start={0} end={42} duration={3} /> : 0}
                 </h3>
